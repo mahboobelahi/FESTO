@@ -1,0 +1,64 @@
+1_START_ZooKeeper:
+zookeeper-server-start.bat C:\kafka_2.11-2.3.0\config\zookeeper.properties
+
+2_START KAFKA:
+kafka-server-start.bat C:\kafka_2.11-2.3.0\config\server.properties
+
+3_BrokerID's
+zookeeper-shell.bat localhost:2181 ls /brokers/ids
+
+4_CREAT_TOPIC:
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic OPCUA_ET200sp
+
+5_DELETE_TOPIC:
+kafka-topics.bat --zookeeper localhost:2181 --delete --topic OPCUA_ET200sp 
+
+6_Prducer Creation(Sending Msg):
+kafka-console-producer.bat --broker-list localhost:9092 --topic OPCUA_ET200sp
+
+7_Consuming Msg:
+kafka-console-consumer.bat --bootstrap-server localhost:9092  --topic OPCUA_ET200sp --from-beginning
+
+8_TOPIC List:
+kafka-topics.bat --list --zookeeper localhost:2181
+
+9_Describe TOPIC:
+kafka-topics.bat --zookeeper localhost:2181 --describe --topic OPCUA_ET200sp
+
+SERVER Properties:
+
+offsets.topic.num.partitions=1
+offsets.topic.replication.factor=1
+transaction.state.log.replication.factor=1
+transaction.state.log.min.isr=1
+min.insync.replicas=1
+default.replication.factor=1
+delete.topic.enable=true 
+
+18 20 22 24 26 28 30 32 34 36 38 40 42 44
+0 2 4 6 8 10 6 7 8 9 10 11
+
+-36 -35 -32 -27 -20 -11 0 13 28 45 64 85 108 133 160 189 220 253
+
+
+        let val = await session.read(nodeIds[0])
+        console.log(val.value.toString());
+
+        let nodeToWrite = {
+            nodeId: nodeIds[0],
+            attributeId: opcua.AttributeIds.Value,
+            indexRange: null,
+            value: /* DataValue */ {
+                //sourceTimestamp: new Date(),
+                statusCode: opcua.StatusCodes.Good,// <==== 
+                value: /* Variant */ {
+                    dataType: opcua.DataType.Boolean,
+                    value: true
+                }
+            },
+        }
+        let risultato = await session.write(nodeToWrite);
+        console.log(risultato.toString());
+
+        val = await session.read(nodeIds[0])
+        console.log(val.value.toString())

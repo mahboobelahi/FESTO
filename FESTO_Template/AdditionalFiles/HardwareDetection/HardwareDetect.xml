@@ -1,0 +1,104 @@
+<OnlineDevices>
+  <OnlineDevice VendorID="2A" DeviceID="341" TypeID="2A0341" DeviceType="IM 3SU1F PN" IsInSameSubnetAsOwnPgPc="True">
+    <DeviceRole>Device</DeviceRole>
+    <OrderNumber>3SU1 400-1LL10-3BA1</OrderNumber>
+    <NameOfStation>
+    </NameOfStation>
+    <MacAddress>00-0E-8C-E8-F3-50</MacAddress>
+    <IPAddress>0.0.0.0</IPAddress>
+    <SubnetMask>0.0.0.0</SubnetMask>
+    <RevisionPrefix>V</RevisionPrefix>
+    <IMVersionMajor>1</IMVersionMajor>
+    <IMVersionMinor>0</IMVersionMinor>
+    <Modules>
+      <Module VendorID="2A" DeviceID="0" TypeID="2A0000" DeviceType="">
+        <ModuleIdentNumber>272</ModuleIdentNumber>
+        <SlotNumber>0</SlotNumber>
+        <OrderNumber>3SU1 400-1LL10-3BA1</OrderNumber>
+        <RevisionPrefix>V</RevisionPrefix>
+        <IMVersionMajor>1</IMVersionMajor>
+        <IMVersionMinor>1</IMVersionMinor>
+        <SubModules>
+          <SubModule VendorID="2A" DeviceID="0" TypeID="2A0000" DeviceType="">
+            <SubModuleIdentNumber>512</SubModuleIdentNumber>
+            <SubSlotNumber>1</SubSlotNumber>
+            <OrderNumber>3SU1 400-1LL10-3BA1</OrderNumber>
+            <RevisionPrefix>V</RevisionPrefix>
+            <IMVersionMajor>1</IMVersionMajor>
+            <IMVersionMinor>1</IMVersionMinor>
+          </SubModule>
+          <SubModule VendorID="2A" DeviceID="0" TypeID="2A0000" DeviceType="">
+            <SubModuleIdentNumber>513</SubModuleIdentNumber>
+            <SubSlotNumber>32768</SubSlotNumber>
+            <OrderNumber>3SU1 400-1LL10-3BA1</OrderNumber>
+            <RevisionPrefix>V</RevisionPrefix>
+            <IMVersionMajor>1</IMVersionMajor>
+            <IMVersionMinor>1</IMVersionMinor>
+          </SubModule>
+          <SubModule VendorID="2A" DeviceID="0" TypeID="2A0000" DeviceType="">
+            <SubModuleIdentNumber>514</SubModuleIdentNumber>
+            <SubSlotNumber>32769</SubSlotNumber>
+            <OrderNumber>3SU1 400-1LL10-3BA1</OrderNumber>
+            <RevisionPrefix>V</RevisionPrefix>
+            <IMVersionMajor>1</IMVersionMajor>
+            <IMVersionMinor>1</IMVersionMinor>
+          </SubModule>
+        </SubModules>
+      </Module>
+      <Module VendorID="2A" DeviceID="0" TypeID="2A0000" DeviceType="">
+        <ModuleIdentNumber>512</ModuleIdentNumber>
+        <SlotNumber>1</SlotNumber>
+        <OrderNumber>3SU1 400-1LL10-3BA1</OrderNumber>
+        <RevisionPrefix>V</RevisionPrefix>
+        <IMVersionMajor>1</IMVersionMajor>
+        <IMVersionMinor>1</IMVersionMinor>
+        <SubModules>
+          <SubModule VendorID="2A" DeviceID="0" TypeID="2A0000" DeviceType="">
+            <SubModuleIdentNumber>528</SubModuleIdentNumber>
+            <SubSlotNumber>1</SubSlotNumber>
+            <OrderNumber>3SU1 400-1LL10-3BA1</OrderNumber>
+            <RevisionPrefix>V</RevisionPrefix>
+            <IMVersionMajor>1</IMVersionMajor>
+            <IMVersionMinor>1</IMVersionMinor>
+          </SubModule>
+        </SubModules>
+      </Module>
+      <Module VendorID="2A" DeviceID="0" TypeID="2A0000" DeviceType="">
+        <ModuleIdentNumber>768</ModuleIdentNumber>
+        <SlotNumber>2</SlotNumber>
+        <OrderNumber>3SU1 400-1LL10-3BA1</OrderNumber>
+        <RevisionPrefix>V</RevisionPrefix>
+        <IMVersionMajor>1</IMVersionMajor>
+        <IMVersionMinor>1</IMVersionMinor>
+        <SubModules>
+          <SubModule VendorID="2A" DeviceID="0" TypeID="2A0000" DeviceType="">
+            <SubModuleIdentNumber>544</SubModuleIdentNumber>
+            <SubSlotNumber>1</SubSlotNumber>
+            <OrderNumber>3SU1 400-1LL10-3BA1</OrderNumber>
+            <RevisionPrefix>V</RevisionPrefix>
+            <IMVersionMajor>1</IMVersionMajor>
+            <IMVersionMinor>1</IMVersionMinor>
+          </SubModule>
+        </SubModules>
+      </Module>
+      <Module VendorID="2A" DeviceID="0" TypeID="2A0000" DeviceType="">
+        <ModuleIdentNumber>16778240</ModuleIdentNumber>
+        <SlotNumber>3</SlotNumber>
+        <OrderNumber>3SU1 400-1LL10-3BA1</OrderNumber>
+        <RevisionPrefix>V</RevisionPrefix>
+        <IMVersionMajor>1</IMVersionMajor>
+        <IMVersionMinor>1</IMVersionMinor>
+        <SubModules>
+          <SubModule VendorID="2A" DeviceID="0" TypeID="2A0000" DeviceType="">
+            <SubModuleIdentNumber>560</SubModuleIdentNumber>
+            <SubSlotNumber>1</SubSlotNumber>
+            <OrderNumber>3SU1 400-1LL10-3BA1</OrderNumber>
+            <RevisionPrefix>V</RevisionPrefix>
+            <IMVersionMajor>1</IMVersionMajor>
+            <IMVersionMinor>1</IMVersionMinor>
+          </SubModule>
+        </SubModules>
+      </Module>
+    </Modules>
+  </OnlineDevice>
+</OnlineDevices>

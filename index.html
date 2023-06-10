@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Sensor Data fron=n Kafka Consumer</title>
+    <style type="text/css">
+        table {
+            border: 1px solid black;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        tr {
+            border: 1px solid black;
+        }
+
+        td,
+        th {
+            padding: 6px;
+            border: 1px solid black;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+    </style>
+    <script src="C:\Users\Mahboob Elahi\SAFA\node_modules\socket.io-client\dist\socket.io.js"></script>
+
+
+</head>
+
+<body>
+    <h1>Special Assignment in Industrial Informatics</h1>
+    <h2>Topic: Integration of OPC-UA into Apache Kafka Middleware: Implementation on SIMATIC ET 200SP<em>
+    </h2>
+    <h2><em>Mahboob Elahi ID:267953</em></h2>
+
+    <hr />
+
+    <h2 style="text-align: left;">IO's status from Apache Kafka Middleware using kafka consumer API</h2>
+
+    <h3 style="text-align: center;"> Data from Kafka Consumer 2</h3>
+    <table id="results">
+        <tr>
+            <th>Monitored Variables</th>
+            <th>Name_Space</th>
+            <th>Node_ID</th>
+            <th>Value</th>
+            <th>Time</th>
+        </tr>
+
+    </table>
+
+
+
+    </table>
+    <script type="text/javascript">
+
+        var socket = io('http://localhost:3001');
+
+        socket.on('connect', () => {
+            console.log("connected");
+        })
+
+        socket.on('update', (data) => {
+            console.log(typeof (data));
+            console.log('DATA:  ', data);
+            data = JSON.parse(data);
+            console.log(typeof (data));
+            toTable(data);
+
+        })
+        function toTable(data) {
+            document.getElementById('results').innerHTML +=
+                "<tr><td>" + data.name + "</td><td>" + data.NodeID.split(';')[0] + "</td><td> " +
+                data.NodeID.split(';')[1] + "</td><td>" + data.measured_value + "</td><td>" +
+                data.time_stamp + "</td></tr>";
+        }
+    </script>
+
+
+
+</body>
+
+</html>
